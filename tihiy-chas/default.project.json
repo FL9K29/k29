@@ -1,0 +1,61 @@
+{
+  "name": "TikhiyChas",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Remotes": {
+        "$className": "Folder",
+        "Pickup": { "$className": "RemoteEvent" },
+        "Deliver": { "$className": "RemoteEvent" },
+        "Sleep": { "$className": "RemoteEvent" },
+        "Hide": { "$className": "RemoteEvent" },
+        "GrabItem": { "$className": "RemoteEvent" },
+        "Throw": { "$className": "RemoteEvent" },
+        "UseObject": { "$className": "RemoteEvent" },
+        "Crouch": { "$className": "RemoteEvent" },
+        "Ready": { "$className": "RemoteEvent" },
+        "Buy": { "$className": "RemoteEvent" },
+        "Equip": { "$className": "RemoteEvent" },
+        "Notify": { "$className": "RemoteEvent" },
+        "Banner": { "$className": "RemoteEvent" },
+        "Effect": { "$className": "RemoteEvent" }
+      }
+    },
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+    "StarterGui": {
+      "MainGui": {
+        "$path": "src/client"
+      }
+    },
+    "Workspace": {
+      "Map": {
+        "$path": "src/workspace/Map.model.json"
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "ClockTime": 0,
+        "Brightness": 0.6,
+        "Ambient": [0.13, 0.14, 0.22],
+        "OutdoorAmbient": [0.16, 0.18, 0.3],
+        "GlobalShadows": true,
+        "EnvironmentDiffuseScale": 0.2,
+        "EnvironmentSpecularScale": 0.2
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.35,
+          "Haze": 2,
+          "Color": [0.1, 0.12, 0.22],
+          "Decay": [0.05, 0.06, 0.12]
+        }
+      }
+    }
+  }
+}
