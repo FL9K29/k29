@@ -1,0 +1,61 @@
+{
+  "name": "RunawayHarvest",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Remotes": {
+        "$className": "Folder",
+        "Plant": { "$className": "RemoteEvent" },
+        "Harvest": { "$className": "RemoteEvent" },
+        "CatchStart": { "$className": "RemoteEvent" },
+        "CatchStop": { "$className": "RemoteEvent" },
+        "CatchProgress": { "$className": "RemoteEvent" },
+        "Sell": { "$className": "RemoteEvent" },
+        "Buy": { "$className": "RemoteEvent" },
+        "EquipPet": { "$className": "RemoteEvent" },
+        "PlaceTrap": { "$className": "RemoteEvent" },
+        "Whistle": { "$className": "RemoteEvent" },
+        "Rebirth": { "$className": "RemoteEvent" },
+        "RequestState": { "$className": "RemoteEvent" },
+        "StateUpdate": { "$className": "RemoteEvent" },
+        "Notify": { "$className": "RemoteEvent" },
+        "EventAnnounce": { "$className": "RemoteEvent" },
+        "Effect": { "$className": "RemoteEvent" }
+      }
+    },
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+    "StarterGui": {
+      "MainGui": {
+        "$path": "src/client"
+      }
+    },
+    "Workspace": {
+      "Map": {
+        "$path": "src/workspace/Map.model.json"
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "ClockTime": 14,
+        "Brightness": 2.5,
+        "Ambient": [0.45, 0.45, 0.5],
+        "OutdoorAmbient": [0.55, 0.55, 0.55],
+        "GlobalShadows": true
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.28,
+          "Haze": 1.2,
+          "Color": [0.78, 0.86, 0.94],
+          "Decay": [0.62, 0.7, 0.78]
+        }
+      }
+    }
+  }
+}
